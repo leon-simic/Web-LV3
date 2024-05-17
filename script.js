@@ -185,7 +185,7 @@ function removeAllItems() {
 function buy() {
     if (cart.length > 0) {
         cart = [];
-        cartTotal.textContent = `$${0.00}`;
+        cartTotal.textContent = `$${0.00.toFixed(2)}`;
         removeAllItems();
         alert("Items successfully bought!");
     }
